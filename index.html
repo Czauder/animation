@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Słońce</title>
+
+    <style>
+     body {
+         background-color: #444;
+         animation: sky 5s linear infinite;
+     }
+     .sun { 
+    position: fixed;
+    bottom: 15%;
+    left: 10%;
+    width: 15vw;
+    height: 15vw;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: sun 5s linear infinite;
+     }
+     .grass {
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom: 0;
+    height: 30vh;
+    background-color: #222;
+    animation: grass 5s linear infinite;
+     }
+
+    @keyframes sky {
+      
+        20% {
+            background-color: rgb(161, 116, 123);
+        }
+
+        50% {
+            background-color: lightblue;
+        }
+
+        80% { 
+            background-color:pink;
+        }
+     }
+
+     @keyframes grass {
+        20% {
+            background-color: rgb(113, 204, 113);
+        }
+        50% { 
+            background-color:forestgreen;
+        }
+        80% { 
+            background-color:rgb(12, 100, 12);
+        }
+     }
+
+     @keyframes sun {
+        50% { 
+            bottom: 45%;
+            background-color:yellow;
+        }
+    
+        100% {
+            bottom: 15%;
+            left: 90%;
+            background-color:darkred;
+             }
+     }
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+
+</html>
